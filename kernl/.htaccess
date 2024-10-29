@@ -1,7 +1,0 @@
-RewriteEngine on
-RewriteBase /
-
-RewriteCond %{REQUEST_URI} !^/kernl/docs/.vuepress/dist/
-
-# Rewrite all those to insert /folder
-RewriteRule ^(.*)$ /kernl/docs/.vuepress/dist/$1 [L]
