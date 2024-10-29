@@ -1,0 +1,19 @@
+{
+  "name": "kernl(docs)",
+  "version": "0.1.0",
+  "author": "NU PODS <provost-digital@northeastern.edu>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {
+    "kernl-ui": "git+https://git@bitbucket.org/nupods/kernl-ui.git",
+    "vuepress": "^0.10.1"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}

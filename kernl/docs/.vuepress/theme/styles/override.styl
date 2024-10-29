@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900')
+@import url('https://assets.provost.northeastern.edu/kernl-ui/dist/styles/main.css')
+
+html
+  background-color #fff
+
+body
+  -webkit-font-smoothing initial
+  -moz-osx-font-smoothing initial
+  font-family Lato
+
+.hero
+  h1,
+  .description
+    display none
+
+.content:not(.custom),
+.page-edit
+  margin 0 !important
+
+.content:not(.custom)
+  max-width none
+
+  > img:not([class*='w--'])
+    width 100%
+    max-width 50rem
+
+.content
+
+  > *:not(img):not(a):not(.badge):not([class*='w--']):not(.section)
+    width 96%
+    max-width: 60rem
+
+  > img:not([class*='w--'])
+    width 100% !important
+    max-width 50rem !important
+
+  > .row
+    width 100% !important
+
+  > h2
+    font-size 1.75em
+    margin-top 3.5rem
+    padding-top 3.25rem
+    border-top 1px solid #ccc
+
+    + .fs--lead
+      font-size 1.35rem
+      line-height 1.4
+
+  > h3
+    font-size 1.5em
+
+  > h4
+    font-size 1.25em
+
+  > h2, h3, h4, h5, h6
+    font-weight 700
+
+  > p
+    line-height 1.6
+
+  > hr
+    margin-top 2.5rem
+
+  > h1:first-child
+    font-weight 300
+    font-size 3.75rem
+    letter-spacing -1px
+    background-color #000
+    color #fff
+    padding 3rem 2rem 0.5rem 0
+    margin -2rem 0 0 0
+    max-width none !important
+    width: 100% !important
+    position relative
+    z-index 0
+
+    + h2
+      border-top 0 none
+      padding-top 0
+
+    + p
+      background-color #000
+      color #fff
+      padding 0.5rem 2rem 3rem 0
+      margin 0 0 3.5rem 0
+      max-width none !important
+      font-weight 300
+      font-size 1.35rem
+      width: 100% !important
+      position relative
+      z-index 0
+
+      + h2
+        border-top 0 none
+        padding-top 0
+
+      code
+        color #ccc
+        font-size 1rem
+
+      a
+        color #ccc
+        border-bottom 1px dashed rgba(255, 255, 255, 0.4)
+
+        &:hover
+          color #fff
+
+  > h1:first-child::after,
+  > h1:first-child + p::after
+    content ''
+    position absolute
+    top 0
+    left -2rem
+    right -2rem
+    height 100%
+    background-color #000
+    z-index -1
+
+.landing-page
+  .features
+    border-top 1px solid #eaecef
+    padding 1.2rem 0
+    margin-top 2.5rem
+    display flex
+    flex-wrap wrap
+    align-items flex-start
+    align-content stretch
+    justify-content space-between
+
+  .feature
+    flex-grow 1
+    flex-basis 42%
+    max-width 42%
+    margin-bottom 2rem
+
+    h2
+      font-size 1.4rem
+      font-weight 700
+      border-bottom none
+      padding-bottom 0
+      color #444
+
+.badge
+  border-radius 0
+  height auto
+  margin-right 0
+
+.home
+  max-width 1200px
+
+  .hero
+    .action-button
+      font-size 0.88rem
+      padding 0.5rem 1.5rem
+      border-radius 0
+
+    img
+      max-height 250px
+
+  .features
+    border-top-color #ddd
+    padding-top 2rem
+
+    .feature
+      padding-left 1rem
+      padding-right 1rem
+      text-align center
+
+      h2
+        font-weight 300
+        color #333
+
+      p
+        font-size 0.88rem
+        color #333
+
+  .hero + .features
+    padding-top 4rem
+
+  .footer
+    background none
+
+  .content > *
+    width auto !important
+    max-width none !important
+
+  .custom
+    .features
+      border-top 0 none
+      padding-top 0
+      margin-top 0
+
+  code
+    white-space pre
+
+.tip,
+.warning
+  p,
+  ol,
+  ul
+    margin-top 1rem
+
+.sidebar-group
+  margin-bottom 0.5rem
+
+div[class*="language-"]
+  background-color #444
+  margin-bottom 1.5rem
+  max-width 40rem
+
+  code
+    white-space pre
+    font-size 0.75rem
+
+.icon.outbound
+  position relative
+  top 2px
+  left 2px
+
+tr:nth-child(2n)
+  background-color #f7f7f7
+
+.page-edit
+  padding-top 0
+  padding-bottom 0
+
+.page-nav
+  margin-top 1rem
+  margin-left 0
+  color rgba(0, 0, 0, 0.4)
+  font-size 0.88rem
+  padding-right 2rem
+  max-width none
+
+  > *
+    width 96%
+    max-width: 60rem
+
+  a
+    color rgba(0, 0, 0, 0.6)
+
+    &:hover
+      color #c00
+
+.custom-block
+  &.tip
+    background-color #f7f7f7
+
+  &.for-devs
+    border-color #ccc
+
+    > .custom-block-title
+      padding-bottom 1rem
+      font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+      font-weight 400
+      margin-bottom 1rem
+      border-bottom 1px solid rgba(0, 0, 0, 0.2)
+
+// override Vue's badge of the same class name
+.badge
+  padding .4rem .6rem .45rem !important
+  display inline-block !important
+  color #333 !important
+  font-size .76rem !important
+  line-height 1 !important
+  overflow hidden !important
+  text-align center !important
+  border 1px solid rgba(51,51,51,.5) !important
+  vertical-align middle !important
+  white-space nowrap !important
+  position relative !important
+  z-index 1 !important
+  height auto !important
+  background-color transparent !important
+  border-radius 0 !important
+
+// accordion demo override for VuePress limitations
+.accordion
+
+  .collapsible
+    .__content
+      display block
+      max-height 20rem
+
+    &.is-closed
+      .__content
+        max-height 0
+
+.collapsible
+  .collapse-title
+    cursor pointer
+
+  .collapse-body
+    padding 0
+    max-height 50em
+    overflow hidden
+    transition 0.3s ease all
+
+  &.is-closed
+    .collapse-title
+      margin-bottom 0
+      border-bottom 0 solid rgba(0, 0, 0, 0)
+
+    .collapse-body
+      max-height 0
+
+.theme-container.sidebar-open .sidebar-mask
+  background-color rgba(0, 0, 0, 0.7)
+
+.\--powered
+  font-weight 400 !important
+  text-align center
+  width 100%
+  color #686868
+
+  i
+    position relative
+
+    &::before,
+    &::after
+      content ""
+      position absolute
+      width 8rem
+      height 1px
+      background-color #ddd
+      top 0.5rem
+
+    &::before
+      left -8.5rem
+
+    &::after
+      right -8.5rem
