@@ -7,7 +7,7 @@
   <div class="k_nav__list">
     <?php foreach (getKernlFiles() as $file) : ?>
       <a class="k_nav__item <?= ($file == $_GET['part'] ? 'k_nav__item--active' : ''); ?>"
-        href="<?= $url; ?>/?part=<?= $file; ?> ">
+        href="/kernl-ui/part-<?= $file; ?>.html">
         <?= $file; ?>
       </a>
     <?php endforeach; ?>

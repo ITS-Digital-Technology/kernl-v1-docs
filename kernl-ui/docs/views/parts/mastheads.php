@@ -1,13 +1,10 @@
 <?php $opt = (isset($_GET['opt']) ? $_GET['opt'] : null); ?>
 <!-- start base masthead -->
 
-<div id="nu__globalheader">
-    <?= chromeHeader(); ?>
-</div>
- <!-- -support -navbar -->
+<!-- -support -navbar -->
 <header class="masthead<?= ' ' . $opt ?>">
     <a class="masthead_logo" href="#">
-        <img class="masthead_image" alt="Logo" src="/docs/images/logo<?= ($opt == '-overlay' || $opt == '-dark') ? '-white' : '' ?>.png">
+        <img class="masthead_image" alt="Logo" src="/kernl-ui/docs/images/logo<?= ($opt == '-overlay' || $opt == '-dark') ? '-white' : '' ?>.png">
     </a>
     <div class="masthead_toggle">
         <button type="button" class="nav_handle hidden-up@d">
@@ -17,7 +14,7 @@
     <nav class="nav masthead_nav" data-navigation-handle=".nav_handle" data-navigation-content=".masthead_toggle">
         <div class="w-100 d-flex justify-between hidden-up@d">
             <a class="masthead_logo pl-1 mb-0h" href="#">
-                <img class="masthead_image" alt="Logo" src="/docs/images/logo<?= ($opt == '-dark') ? '-white' : '' ?>.png">
+                <img class="masthead_image" alt="Logo" src="/kernl-ui/docs/images/logo<?= ($opt == '-dark') ? '-white' : '' ?>.png">
             </a>
             <button type="button" class="nav_handle hidden-up@d mr-1">
                 <span class="sr-only">Close Menu</span>
@@ -151,98 +148,98 @@
         <div class="masthead_central">
             <ul class="nav_list">
                 <li class="nav_item +children">
-                    <a class="nav_link " href="https://nuweb28dev.neu.edu/gri/about/" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav_link " href="#gri/about/" aria-haspopup="true" aria-expanded="false">
                         About
                     </a>
 
                     <ul class="nav_sublist" aria-expanded="false" data-depth="0">
                         <li class="nav_back tt-caps"><a href="#">Previous</a></li>
                         <li class="nav_subitem hidden-up@d">
-                            <a class="nav_sublink  fw-700" href="https://nuweb28dev.neu.edu/gri/about/">About</a>
+                            <a class="nav_sublink  fw-700" href="#gri/about/">About</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/about/">Resilience Overview</a>
+                            <a class="nav_sublink " href="#gri/about/">Resilience Overview</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/about/team/">Team</a>
+                            <a class="nav_sublink " href="#gri/about/team/">Team</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav_item +children">
-                    <a class="nav_link " href="https://nuweb28dev.neu.edu/gri/solutions/" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav_link " href="#gri/solutions/" aria-haspopup="true" aria-expanded="false">
                         Resilience Solutions
                     </a>
 
                     <ul class="nav_sublist" aria-expanded="false" data-depth="0">
                         <li class="nav_back tt-caps"><a href="#">Previous</a></li>
                         <li class="nav_subitem hidden-up@d">
-                            <a class="nav_sublink  fw-700" href="https://nuweb28dev.neu.edu/gri/solutions/">Resilience Solutions</a>
+                            <a class="nav_sublink  fw-700" href="#gri/solutions/">Resilience Solutions</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solutions/">Resilience Solutions Overview</a>
+                            <a class="nav_sublink " href="#gri/solutions/">Resilience Solutions Overview</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/integrated-resilience-enhancement-solutions/">Integrated Resilience Enhancement Solution</a>
+                            <a class="nav_sublink " href="#gri/solution/integrated-resilience-enhancement-solutions/">Integrated Resilience Enhancement Solution</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/integrated-resilience-action-planning-for-enterprises/">Integrated Resilience Action Planning for Enterprises</a>
+                            <a class="nav_sublink " href="#gri/solution/integrated-resilience-action-planning-for-enterprises/">Integrated Resilience Action Planning for Enterprises</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/enterprise-resilience/">Incident Management and Business Continuity and Recovery</a>
+                            <a class="nav_sublink " href="#gri/solution/enterprise-resilience/">Incident Management and Business Continuity and Recovery</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/cyber-resilience/">Cyber Resilience</a>
+                            <a class="nav_sublink " href="#gri/solution/cyber-resilience/">Cyber Resilience</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/executive-education-training/">Executive Education and Training</a>
+                            <a class="nav_sublink " href="#gri/solution/executive-education-training/">Executive Education and Training</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/vetted-technology-resilience/">Vetted Technology Resilience</a>
+                            <a class="nav_sublink " href="#gri/solution/vetted-technology-resilience/">Vetted Technology Resilience</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/critical-infrastructure-resilience/">Critical Infrastructure Resilience</a>
+                            <a class="nav_sublink " href="#gri/solution/critical-infrastructure-resilience/">Critical Infrastructure Resilience</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/solution/post-disaster-assessment-advisory/">Post-Disaster Assessment and Advisory</a>
+                            <a class="nav_sublink " href="#gri/solution/post-disaster-assessment-advisory/">Post-Disaster Assessment and Advisory</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav_item +children">
-                    <a class="nav_link " href="https://nuweb28dev.neu.edu/gri/programs/" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav_link " href="#gri/programs/" aria-haspopup="true" aria-expanded="false">
                         Programs
                     </a>
 
                     <ul class="nav_sublist" aria-expanded="false" data-depth="0">
                         <li class="nav_back tt-caps"><a href="#">Previous</a></li>
                         <li class="nav_subitem hidden-up@d">
-                            <a class="nav_sublink  fw-700" href="https://nuweb28dev.neu.edu/gri/programs/">Programs</a>
+                            <a class="nav_sublink  fw-700" href="#gri/programs/">Programs</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/programs/">Programs Overview</a>
+                            <a class="nav_sublink " href="#gri/programs/">Programs Overview</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/programs/global-resilience-research-network/">Global Resilience Research Network</a>
+                            <a class="nav_sublink " href="#gri/programs/global-resilience-research-network/">Global Resilience Research Network</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/programs/funded-resilience-research/">Funded Resilience Research</a>
+                            <a class="nav_sublink " href="#gri/programs/funded-resilience-research/">Funded Resilience Research</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/programs/corporate-partnerships/">Corporate Partnerships</a>
+                            <a class="nav_sublink " href="#gri/programs/corporate-partnerships/">Corporate Partnerships</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav_item +children">
-                    <a class="nav_link " href="https://nuweb28dev.neu.edu/gri/newsroom/" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav_link " href="#gri/newsroom/" aria-haspopup="true" aria-expanded="false">
                         Newsroom
                     </a>
 
                     <ul class="nav_sublist" aria-expanded="false" data-depth="0">
                         <li class="nav_back tt-caps"><a href="#">Previous</a></li>
                         <li class="nav_subitem hidden-up@d">
-                            <a class="nav_sublink  fw-700" href="https://nuweb28dev.neu.edu/gri/newsroom/">Newsroom</a>
+                            <a class="nav_sublink  fw-700" href="#gri/newsroom/">Newsroom</a>
                         </li>
                         <li class="nav_subitem">
-                            <a class="nav_sublink " href="https://nuweb28dev.neu.edu/gri/newsroom/">Latest News &amp; Events</a>
+                            <a class="nav_sublink " href="#gri/newsroom/">Latest News &amp; Events</a>
                         </li>
                         <li class="nav_subitem">
                             <a class="nav_sublink " href="/gri/category/publications/">Publications</a>
@@ -253,13 +250,13 @@
                     </ul>
                 </li>
                 <li class="nav_item ">
-                    <a class="nav_link " href="https://nuweb28dev.neu.edu/gri/resiliencenu/">
+                    <a class="nav_link " href="#gri/resiliencenu/">
                         Resilience@NU
                     </a>
 
                 </li>
                 <li class="nav_item ">
-                    <a class="nav_link " href="https://nuweb28dev.neu.edu/gri/contact/">
+                    <a class="nav_link " href="#gri/contact/">
                         Contact
                     </a>
 

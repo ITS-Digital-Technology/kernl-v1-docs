@@ -4,7 +4,7 @@
 
 <header class="k_header">
 
-    <a class="k_logo" href="<?= $url; ?>">
+    <a class="k_logo" href="/kernl-ui/">
       <b>kernl</b>(ui)
     </a>
     <i class="k_nav__separator" data-feather="arrow-right"></i>
